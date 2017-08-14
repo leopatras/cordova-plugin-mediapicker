@@ -193,7 +193,7 @@ public class MediaPicker extends CordovaPlugin {
             mediaInfo.put("title", title);
             mediaInfo.put("duration", duration);
             mediaInfo.put("exportedUrl", "file://" + path);
-			mediaInfo.puth("sourceUrl", uri);
+	    mediaInfo.puth("sourceUrl", uri.getPath());
             mediaInfo.put("image", image);
         } catch (JSONException e) {
             e.printStackTrace();
